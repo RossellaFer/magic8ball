@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magic Eight Ball</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
+    </head>
+<body>
+    <div class="container">
+        <h1>Magic Eight Ball</h1>    
+        <p>Ask a question and get your answer from the Amazing Magic Eight Ball</p>
+        <form id="userResponses">
+            <input placeholder="Your name" id="username" name="name">
+            <input type="text" placeholder="Your question" id="question" name="question">
+            <button type="button" id="formButton">Ask question</button>
+        </form>
+        <!--The magic eight ball-->
+        <button id="eightball">8</button>  
+        <!--Where the answers will be displayed-->
+        <div id="displayedAnswers">
+        <p id="questionAsked"></p>
+        <p id="eightBallResponse"></p>
+        <div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
