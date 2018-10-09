@@ -27,11 +27,6 @@ h1 {
     text-shadow: 3px 3px 0 #e7eef1, 8px 8px 0 rgba(0,0,0,0.1);
 }
 
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 3em;
-    }
-} 
 
 .container {
     display: flex;
@@ -128,27 +123,6 @@ h1 {
     background-size: 30px 30px;
 }
 
-@media screen and (max-width: 600px) {
-    #userResponses {
-        flex-direction: column;
-    }
-
-    #formButton {
-        padding: 10px 10px;
-    }
-
-    #eightball {
-        height: 150px;
-        width: 150px;
-    }
-
-    #eightball::before {
-        height: 40px;
-        width: 40px;
-        font-size: 25px;
-    }
-}
-
 #userResponses input {
     width: 100%;
     padding: 0 10px;
@@ -176,8 +150,55 @@ h1 {
     font-size: 1em;
 }
 
+#displayedAnswers {
+    min-height: 30px;
+}
 
 
+@media screen and (max-width: 600px) {
+
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #userResponses {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #formButton {
+        padding: 10px 10px;
+    }
+
+    #eightball {
+        height: 4em;
+        width: 4em;
+    }
+
+    #eightball::before {
+        height: 1.4em;
+        width: 1.4em;
+        left: 32%;
+    }
+}
+
+@media screen and (max-height: 550px) {
+     #eightball {
+        height: 3em;
+        width: 3em;
+     }
+
+     #eightball::before {
+        height: 1.4em;
+        width: 1.4em;
+        left: 29%;
+     }
+
+     h1 {
+        font-size: 1.5em;
+     }
+}
 
 
 
